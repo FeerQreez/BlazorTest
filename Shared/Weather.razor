@@ -1,0 +1,10 @@
+<span class="@Forecast.ToString().ToLower()"></span>
+<div class="weather">
+    <h2>@TempC<span>ºC</span></h2>
+    <p>@Forecast weather in @City.</p>
+</div>
+@code {
+    [Parameter] public int TempC { get; set; }
+    [Parameter] public string City { get; set; }
+    [Parameter] public ForecastType Forecast { get; set; }
+}

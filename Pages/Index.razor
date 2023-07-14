@@ -1,0 +1,432 @@
+﻿@page "/"
+@using Telerik.Blazor
+@using Telerik.Blazor.Components
+@inject HttpClient Http
+
+<h1>Hello, world!</h1>
+
+<TelerikButton OnClick="@SayHelloHandler" >Say Hello</TelerikButton>
+<TelerikButton OnClick="@SayHelloHandler" Primary="true" >Say Hello</TelerikButton>
+
+<p></p>
+<TelerikCalendar Min="@min" Max="@max" ValueChanged="@MyValueChangeHandler" @bind-Date="@theDate">
+</TelerikCalendar>
+
+The selected date is: @selectedDate
+<p></p>
+<TelerikDateTimePicker @bind-Value="@selectedTime" ></TelerikDateTimePicker>
+<div class="pt-4">The selected time is: @selectedTime?.ToString()</div>
+<p></p>
+
+<TelerikDatePicker Min="@Min" Max="@Max" @bind-Value="@selectedDateDP"></TelerikDatePicker>
+<div class="pt-4">The selected date is: @selectedDateDP?.ToShortDateString()</div>
+
+<p></p>
+Basic chart and common settings/elements
+
+<TelerikChart>
+    <ChartTitle Text="What is you favourite sport?"></ChartTitle>
+    <ChartLegend Visible="true" Position="ChartLegendPosition.Top"></ChartLegend>
+
+    <ChartSeriesItems>
+        <ChartSeries Type="ChartSeriesType.Donut"
+                     Data="@Data"
+                     Field="@nameof(ModelData.Value)"
+                     CategoryField="@nameof(ModelData.Category)">
+            <ChartSeriesLabels Position="ChartSeriesLabelsPosition.OutsideEnd"
+                               Visible="true"
+                               Background="transparent"
+                               Template="#= dataItem.Category # - #= percentage*100 #%">
+            </ChartSeriesLabels>
+        </ChartSeries>
+    </ChartSeriesItems>
+
+</TelerikChart>
+<p></p>
+<span>Select a product:</span>
+
+<TelerikDropDownList Data="@DropDownListData" @bind-Value=@SelectedValue PopupHeight="170px" DefaultItem="@DefaultItem" ValueField="ProductId" TextField="ProductName">
+</TelerikDropDownList>
+
+<br />Selected product: @SelectedValue
+<p></p>
+<TelerikTabStrip @bind-ActiveTabIndex="@ActiveTabIndex">
+    <TabStripTab Title="Sofia">
+        <Weather City="Sofia"
+                 TempC="23"
+                 Forecast="ForecastType.Sunny">
+        </Weather>
+    </TabStripTab>
+    <TabStripTab Title="London">
+        <Weather City="London"
+                 TempC="21"
+                 Forecast="ForecastType.Cloudy">
+        </Weather>
+    </TabStripTab>
+    <TabStripTab Title="Paris">
+        <Weather City="Paris"
+                 TempC="17"
+                 Forecast="ForecastType.Rainy">
+        </Weather>
+    </TabStripTab>
+</TelerikTabStrip>
+
+<h4>Active Tab Index: @ActiveTabIndex </h4>
+<p></p>
+<div style="height: 80px;">
+    <TelerikMenu Data="@MenuItems">
+    </TelerikMenu>
+</div>
+<p></p>
+<TelerikTreeView Data="@FlatData">
+	<TreeViewBindings>
+		<TreeViewBinding ParentIdField="ParentIdValue"></TreeViewBinding>
+	</TreeViewBindings>
+</TelerikTreeView>
+<p></p>
+<TelerikButton Icon=@IconName.Window OnClick=@(()=> WindowVisible = true)>Open Modal</TelerikButton>
+
+<TelerikWindow Class="demo-window" Width="500px" Height="300px" Centered="true" Visible=@WindowVisible Modal="true">
+    <WindowTitle>
+        <strong>Modal Window</strong>
+    </WindowTitle>
+    <WindowActions>
+        <WindowAction Name="Close" OnClick="CustomAction"/>
+    </WindowActions>
+    <WindowContent>
+        <p>Click the close button to dismiss this modal dialog.</p>
+    </WindowContent>
+</TelerikWindow>
+<p></p>
+<TelerikGrid Data=@GridData
+             Pageable="true" Groupable="true" Sortable="true"
+             OnUpdate="@UpdateHandler" OnDelete="@DeleteHandler" OnCreate="@CreateHandler">
+    <GridColumns>
+        <GridColumn Field="Date">
+            <Template>
+                @((context as WeatherForecast).Date.ToString("MMMM dd, yyyy"))
+            </Template>
+        </GridColumn>
+        <GridColumn Field="TemperatureC" Title="Temp. C"/>
+        <GridColumn Field="Summary"  />
+        <GridCommandColumn Width="300px">
+            <GridCommandButton Command="Save" Icon="save" ShowInEdit="true">Update</GridCommandButton>
+            <GridCommandButton Command="Edit" Icon="edit">Edit</GridCommandButton>
+            <GridCommandButton Command="Delete" Icon="delete">Delete</GridCommandButton>
+            <GridCommandButton Command="Cancel" Icon="cancel" ShowInEdit="true">Cancel</GridCommandButton>
+        </GridCommandColumn>
+    </GridColumns>
+    <GridToolBar>
+        <GridCommandButton Command="Add" Icon="add">Add Forecast</GridCommandButton>
+    </GridToolBar>
+</TelerikGrid>
+<p></p>
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@helloString
+
+@code {
+    private DateTime min = new DateTime(2015, 1, 1);
+    private DateTime max = new DateTime(2025, 12, 31);
+    private DateTime theDate { get; set; } = DateTime.Now;
+    private string selectedDate = "";
+
+    public DateTime Max = new DateTime(2050, 12, 31);
+    public DateTime Min = new DateTime(1950, 1, 1);
+    private DateTime? selectedDateDP = DateTime.Now;
+    private DateTime? selectedTime = DateTime.Now;
+
+    private void MyValueChangeHandler(DateTime newValue)
+    {
+        selectedDate = newValue.ToString("dd MMM yyyy");
+    }
+
+   MarkupString helloString;
+
+   void SayHelloHandler()
+   {
+       string msg = string.Format("Hello from <strong>Telerik Blazor</strong> at {0}.<br /> Now you can use C# to write front-end!", DateTime.Now);
+       helloString = new MarkupString(msg);
+   }
+public class ModelData
+    {
+        public string Category { get; set; }
+        public Int32 Value { get; set; }
+    }
+
+    public List<ModelData> Data = new List<ModelData>()
+    {
+        new ModelData()
+        {
+            Category = "Football",
+            Value = 35
+        },
+        new ModelData()
+        {
+            Category = "Basketball",
+            Value = 25
+        },
+        new ModelData()
+        {
+            Category = "Volleyball",
+            Value = 20
+        },
+        new ModelData()
+        {
+            Category = "Rugby",
+            Value = 10
+        },
+        new ModelData()
+        {
+            Category = "Tennis",
+            Value = 10
+        },
+
+    };
+
+     public class Product
+    {
+        
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public int? SupplierId { get; set; }
+        public int? CategoryId { get; set; }
+        public string QuantityPerUnit { get; set; }
+        public decimal? UnitPrice { get; set; }
+        public short? UnitsInStock { get; set; }
+        public short? UnitsOnOrder { get; set; }
+        public short? ReorderLevel { get; set; }
+        public bool Discontinued { get; set; }
+        public DateTime? CreatedAt { get; set; }
+    }
+    public IEnumerable<Product> DropDownListData { get; set; }
+    public Product DefaultItem { get; set; } = new Product()
+    {
+        ProductId = 0,
+        ProductName = "Select a product..."
+    };
+    public int SelectedValue { get; set; } = 2;
+
+    protected override void OnInitialized()
+    {
+        List<Product> products = new List<Product>();
+        for (int i = 0; i < 5; i++)
+        {
+            products.Add(new Product()
+            {
+                ProductId = i,
+                ProductName = "Product" + i.ToString(),
+                SupplierId = i,
+                UnitPrice = (decimal)(i * 3.14),
+                UnitsInStock = (short)(i * 1),
+            });
+        }
+
+        DropDownListData = products.AsQueryable();
+
+ MenuItems = new List<MenuItem>()
+        {
+                new MenuItem()
+                {
+                    Text = "Item 1",
+                    Items = new List<MenuItem>()
+                {
+                        new MenuItem()
+                        {
+                            Text = "Item 1.1"
+                        },
+                        new MenuItem()
+                        {
+                            Text = "Item 1.2",
+                            Items = new List<MenuItem>()
+                        {
+                                new MenuItem()
+                                {
+                                    Text = "Item 1.2.1"
+                                },
+                                new MenuItem()
+                                {
+                                    Text = "Item 1.2.2"
+                                }
+                            }
+                        }
+                    }
+                },
+                new MenuItem()
+                {
+                    Text = "Item 2",
+                    Items = new List<MenuItem>()
+                {
+                        new MenuItem()
+                        {
+                            Text = "Item 2.1",
+                            Items = new List<MenuItem>()
+                        {
+                                new MenuItem()
+                                {
+                                    Text = "Item 2.1.1"
+                                }
+                            }
+                        },
+                        new MenuItem()
+                        {
+                            Text = "Item 2.2"
+                        }
+                    }
+                },
+                new MenuItem()
+                {
+                    Text = "Item 3"
+                }
+            };
+
+        LoadFlatData();
+        base.OnInitialized();
+    }
+
+
+    public int ActiveTabIndex { get; set; } = 1;
+
+    public List<MenuItem> MenuItems { get; set; }
+
+    public class MenuItem
+    {
+        public string Text { get; set; }
+        public List<MenuItem> Items { get; set; }
+    }
+	public class TreeItem
+	{
+		public int Id { get; set; }
+		public string Text { get; set; }
+		public int? ParentIdValue { get; set; }
+		public bool HasChildren { get; set; }
+		public string Icon { get; set; }
+		public bool Expanded { get; set; }
+	}
+
+	public IEnumerable<TreeItem> FlatData { get; set; }
+
+    private void LoadFlatData()
+	{
+		List<TreeItem> items = new List<TreeItem>();
+		items.Add(new TreeItem()
+		{
+			Id = 1,
+			Text = "Project",
+			ParentIdValue = null,
+			HasChildren = true,
+			Icon = "folder",
+			Expanded = true
+		});
+		items.Add(new TreeItem()
+		{
+			Id = 2,
+			Text = "Design",
+			ParentIdValue = 1,
+			HasChildren = true,
+			Icon = "brush",
+			Expanded = true
+		});
+		items.Add(new TreeItem()
+		{
+			Id = 3,
+			Text = "Implementation",
+			ParentIdValue = 1,
+			HasChildren = true,
+			Icon = "folder",
+			Expanded = true
+		});
+
+		items.Add(new TreeItem()
+		{
+			Id = 4,
+			Text = "site.psd",
+			ParentIdValue = 2,
+			HasChildren = false,
+			Icon = "psd",
+			Expanded = true
+		});
+
+		items.Add(new TreeItem()
+		{
+			Id = 5,
+			Text = "index.js",
+			ParentIdValue = 3,
+			HasChildren = false,
+			Icon = "js"
+		});
+		items.Add(new TreeItem()
+		{
+			Id = 6,
+			Text = "index.html",
+			ParentIdValue = 3,
+			HasChildren = false,
+			Icon = "html"
+		});
+
+		items.Add(new TreeItem()
+		{
+			Id = 7,
+			Text = "styles.css",
+			ParentIdValue = 3,
+			HasChildren = false,
+			Icon = "css"
+		});
+
+		FlatData = items;
+    }
+    bool WindowVisible = false;
+    public void CustomAction()
+    {
+        WindowVisible = false;
+    }
+
+
+    public List<WeatherForecast> GridData { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    // sample Read operation
+    private async Task LoadData()
+    {
+        GridData = await Http.GetJsonAsync<List<WeatherForecast>>("sample-data/weather.json");;
+    }
+
+    // sample CUD operations
+    public void UpdateHandler(GridCommandEventArgs args)
+    {
+        WeatherForecast item = (WeatherForecast)args.Item;
+        var matchingItem = GridData.FirstOrDefault(c => c.Id == item.Id);
+        if (matchingItem != null)
+        {
+            matchingItem.Summary = item.Summary;
+            matchingItem.TemperatureC = item.TemperatureC;
+            matchingItem.Date = item.Date;
+        }
+    }
+
+    public void DeleteHandler(GridCommandEventArgs args)
+    {
+        WeatherForecast item = (WeatherForecast)args.Item;
+        GridData.Remove(item);
+    }
+
+    public void CreateHandler(GridCommandEventArgs args)
+    {
+        WeatherForecast item = (WeatherForecast)args.Item;
+
+        item.Id = GridData.Count;
+        GridData.Insert(0, item);
+    }
+}
+<style type="text/css">
+    .demo-window {
+        z-index: 44444;
+        position: fixed;
+    }
+</style>

@@ -1,0 +1,4002 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Blazor</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Blazor.Common.DateHelpers.TimePartType">
+            <summary>
+            Controls the type attribute of the rendered button.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikAnimationContainerBase">
+            <summary>
+            A container that can be positioned and sized as desired, and shows with an animation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikAnimationContainerBase.Id">
+            <summary>
+            The id of the animation container.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikAnimationContainerBase.ShowAsync">
+            <summary>
+            Shows the animation container.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikAnimationContainerBase.HideAsync">
+            <summary>
+            Hides the animation container
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikAnimationContainerBase.ToggleAsync">
+            <summary>
+            Toggles the animation container
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Blazor.Components.IButton">
+            <summary>
+            Describes the public getters of a button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.IButton.Class">
+            <summary>
+            The CSS class rendered on the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.IButton.Enabled">
+            <summary>
+            Whether the button is enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.IButton.Primary">
+            <summary>
+            Whether the button is primary (usually, a stronger background color).
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.IButton.Hidden">
+            <summary>
+            Whether the button is hidden. For internal use only.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikButtonBase">
+            <summary>
+            The class for the Telerik Button component
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.Class">
+            <summary>
+            The CSS class rendered on the button.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.Blazor.Components.TelerikButtonBase.IsIconButton" -->
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.Icon">
+            <summary>
+            The predefined Telerik Icon rendered in the button. Can take a member of the IconName class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.IconClass">
+            <summary>
+            A custom CSS class for the icon element.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.ImageUrl">
+            <summary>
+            The URL of an image inside the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.SpriteClass">
+            <summary>
+            The CSS class to define an image from a sprite.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.Enabled">
+            <summary>
+            Whether the button is enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.Hidden">
+            <summary>
+            Whether the button is hidden. For internal use only.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.Primary">
+            <summary>
+            Whether the button is primary (usually, a stronger background color).
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.OnClick">
+            <summary>
+            The Click handler of the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikButtonBase.ButtonType">
+            <summary>
+            The type attribute rendered on the button. Defaults to submit.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikCalendarBase">
+            <summary>
+            The Calendar component class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.View">
+            <summary>
+            Specifies the current view that will be displayed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.ViewChanged">
+            <summary>
+            The handler that will be called when the user navigates to a different view.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.BottomView">
+            <summary>
+            Defines the bottommost view to which the user can navigate.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.SelectionMode">
+            <summary>
+            Sets the selection mode of the calendar.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.Views">
+            <summary>
+            Defines the number of views that will be rendered next to each other.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.Min">
+            <summary>
+            Sets the minimum allowed date of the calendar.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.Max">
+            <summary>
+            Sets the maximum allowed date of the calendar.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.Date">
+            <summary>
+            Sets the date to which the calendar will navigate.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.DateChanged">
+            <summary>
+            The handler that will be called when the user navigates to a different date.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.Value">
+            <summary>
+            Sets the value of the calendar when single selection is used.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.DisabledDates">
+            <summary>
+            Specifies a list of dates that can not be selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.SelectedDates">
+            <summary>
+            Gets or sets the selected dates when multi-selection is enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikCalendarBase.ValueChanged">
+            <summary>
+            The handler that will be called when the user selects date(s).
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikCalendarBase.Navigate(System.DateTime,Telerik.Blazor.CalendarView)">
+            <summary>
+            Moves the calendar to the date and view that you pass.
+            </summary>
+            <param name="date">The date that you want to be in the current view</param>
+            <param name="view">The view that you want to be rendered</param>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxesBase">
+            <summary>
+            Telerik UI ChartCategoryAxes
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.AxisCrossingValue">
+            <summary>
+            Category index at which the first value axis crosses this axis (when set as an object).Category indices at which the value axes cross the category axis (when set as an array).
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.Background">
+            <summary>
+            The background color of the axis.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.BaseUnitStep">
+            <summary>
+            The step (interval) between categories in base units. Setting it to "auto" will set the step to such value that the total number of categories does not exceed categoryAxis.maxDateGroups.This option is ignored if categoryAxis.baseUnit is set to "fit".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.Categories">
+            <summary>
+            The category names. The chart will create a category for every item of the array.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.Color">
+            <summary>
+            The color to apply to all axis elements. Accepts a valid CSS color string, including hex and rgb. Can be overridden by categoryAxis.labels.color andcategoryAxis.line.color.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.Max">
+            <summary>
+            The last date displayed on the category date axis. By default, the minimum date is the same as the last category. This is often used in combination with the categoryAxis.min and categoryAxis.roundToBaseUnit options to set up a fixed date range.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.MaxDateGroups">
+            <summary>
+            The maximum number of groups (categories) to display whencategoryAxis.baseUnit is set to "fit" orcategoryAxis.baseUnitStep is set to "auto".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.Min">
+            <summary>
+            The first date displayed on the category date axis. By default, the minimum date is the same as the first category. This is often used in combination with the categoryAxis.min and categoryAxis.roundToBaseUnit options to set up a fixed date range.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.Name">
+            <summary>
+            The unique axis name. Used to associate a series with a category axis using the series.categoryAxis option.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.StartAngle">
+            <summary>
+            The angle (degrees) of the first category on the axis.Angles increase clockwise and zero is to the left. Negative values are acceptable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.Visible">
+            <summary>
+            If set to true the chart will display the category axis. By default the category axis is visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.WeekStartDay">
+            <summary>
+            The week start day when categoryAxis.baseUnit is set to "weeks".The supported values are: kendo.days.Sunday - equal to 0; kendo.days.Monday - equal to 1; kendo.days.Tuesday - equal to 2; kendo.days.Wednesday - equal to 3; kendo.days.Thursday - equal to 4; kendo.days.Friday - equal to 5 or kendo.days.Saturday - equal to 6.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.BaseUnit">
+            <summary>
+            Specifies the base time interval for the axis.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisBase.Type">
+            <summary>
+            Specifies the category axis type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase">
+            <summary>
+            Telerik UI ChartCategoryAxisAutoBaseUnitSteps
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase.Milliseconds">
+            <summary>
+            The milliseconds unit steps.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase.Seconds">
+            <summary>
+            The seconds unit steps.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase.Minutes">
+            <summary>
+            The minutes unit steps.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase.Hours">
+            <summary>
+            The hours unit steps.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase.Days">
+            <summary>
+            The days unit steps.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase.Weeks">
+            <summary>
+            The weeks unit steps.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase.Months">
+            <summary>
+            The months unit steps.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisAutoBaseUnitStepsBase.Years">
+            <summary>
+            The years unit steps.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase">
+            <summary>
+            Telerik UI ChartCategoryAxisLabels
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Background">
+            <summary>
+            The background color of the labels. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Color">
+            <summary>
+            The text color of the labels. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Font">
+            <summary>
+            The font style of the labels. Accepts a valid CSS color string, for example "20px 'Courier New'".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Format">
+            <summary>
+            The format used to display the labels. Uses kendo.format. Contains one placeholder ("{0}") which represents the category value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Mirror">
+            <summary>
+            If set to true the chart will mirror the axis labels and ticks. If the labels are normally on the left side of the axis, mirroring the axis will render them to the right.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Skip">
+            <summary>
+            The number of labels to skip. By default no labels are skipped.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Step">
+            <summary>
+            The label rendering step - render every n-th label. By default every label is rendered.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Template">
+            <summary>
+            The template which renders the labels.The fields which can be used in the template are: value - the category value; dataItem - the data item, in case a field has been specified. If the category does not have a corresponding item in the data then an empty object will be passed.; format - the default format of the label or culture - the default culture (if set) on the label.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Visible">
+            <summary>
+            If set to true the chart will display the category axis labels. By default the category axis labels are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBase.Position">
+            <summary>
+            Specifies the position of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisLabelsBorderBase">
+            <summary>
+            Telerik UI ChartCategoryAxisLabelsBorder
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBorderBase.Color">
+            <summary>
+            The color of the border. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBorderBase.DashType">
+            <summary>
+            The dash type of the border.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsBorderBase.Width">
+            <summary>
+            The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisLabelsMarginBase">
+            <summary>
+            Telerik UI ChartCategoryAxisLabelsMargin
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsMarginBase.Bottom">
+            <summary>
+            The bottom margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsMarginBase.Left">
+            <summary>
+            The left margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsMarginBase.Right">
+            <summary>
+            The right margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsMarginBase.Top">
+            <summary>
+            The top margin of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisLabelsPaddingBase">
+            <summary>
+            Telerik UI ChartCategoryAxisLabelsPadding
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsPaddingBase.Bottom">
+            <summary>
+            The bottom padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsPaddingBase.Left">
+            <summary>
+            The left padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsPaddingBase.Right">
+            <summary>
+            The right padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsPaddingBase.Top">
+            <summary>
+            The top padding of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisLabelsRotationBase">
+            <summary>
+            Telerik UI ChartCategoryAxisLabelsRotation
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsRotationBase.Angle">
+            <summary>
+            The rotation angle of the labels. By default the labels are not rotated. Can be set to "auto" if the axis is horizontal in which case the labels will be rotated only if the slot size is not sufficient for the entire labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisLabelsRotationBase.Align">
+            <summary>
+            Specifies the rotation of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisMajorGridLinesBase">
+            <summary>
+            Telerik UI ChartCategoryAxisMajorGridLines
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorGridLinesBase.Color">
+            <summary>
+            The color of the major grid lines. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorGridLinesBase.DashType">
+            <summary>
+            The dash type of the major grid lines.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorGridLinesBase.Visible">
+            <summary>
+            If set to false the chart will not display the major grid lines. By default the major grid lines are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorGridLinesBase.Width">
+            <summary>
+            The width of the category axis major grid lines in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorGridLinesBase.Step">
+            <summary>
+            The step of the category axis major grid lines.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorGridLinesBase.Skip">
+            <summary>
+            The skip of the category axis major grid lines.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisMajorTicksBase">
+            <summary>
+            Telerik UI ChartCategoryAxisMajorTicks
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorTicksBase.Color">
+            <summary>
+            The color of the category axis major ticks lines. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorTicksBase.Size">
+            <summary>
+            The length of the tick line in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorTicksBase.Visible">
+            <summary>
+            If set to true the chart will display the category axis major ticks. By default the category axis major ticks are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorTicksBase.Width">
+            <summary>
+            The width of the major ticks in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorTicksBase.Step">
+            <summary>
+            The step of the category axis major ticks.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMajorTicksBase.Skip">
+            <summary>
+            The skip of the category axis major ticks.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisMinorGridLinesBase">
+            <summary>
+            Telerik UI ChartCategoryAxisMinorGridLines
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorGridLinesBase.Color">
+            <summary>
+            The color of the minor grid lines. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorGridLinesBase.DashType">
+            <summary>
+            The dash type of the minor grid lines.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorGridLinesBase.Visible">
+            <summary>
+            If set to true the chart will display the minor grid lines. By default the minor grid lines are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorGridLinesBase.Width">
+            <summary>
+            The width of the category axis minor grid lines in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorGridLinesBase.Step">
+            <summary>
+            The step of the category axis minor grid lines.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorGridLinesBase.Skip">
+            <summary>
+            The skip of the category axis minor grid lines.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisMinorTicksBase">
+            <summary>
+            Telerik UI ChartCategoryAxisMinorTicks
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorTicksBase.Color">
+            <summary>
+            The color of the category axis minor ticks lines. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorTicksBase.Size">
+            <summary>
+            The length of the tick line in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorTicksBase.Visible">
+            <summary>
+            If set to true the chart will display the category axis minor ticks. By default the category axis minor ticks are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorTicksBase.Width">
+            <summary>
+            The width of the minor ticks in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorTicksBase.Step">
+            <summary>
+            The step of the category axis minor ticks.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisMinorTicksBase.Skip">
+            <summary>
+            The skip of the category axis minor ticks.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisTitleBase">
+            <summary>
+            Telerik UI ChartCategoryAxisTitle
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBase.Background">
+            <summary>
+            The background color of the title. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBase.Color">
+            <summary>
+            The text color of the title. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBase.Rotation">
+            <summary>
+            The rotation angle of the title. By default the title is not rotated.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBase.Text">
+            <summary>
+            The text of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBase.Visible">
+            <summary>
+            If set to true the chart will display the category axis title. By default the category axis title is visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBase.Position">
+            <summary>
+            Specifies the title position.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisTitleBorderBase">
+            <summary>
+            Telerik UI ChartCategoryAxisTitleBorder
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBorderBase.Color">
+            <summary>
+            The color of the border. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBorderBase.DashType">
+            <summary>
+            The dash type of the border.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleBorderBase.Width">
+            <summary>
+            The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisTitleMarginBase">
+            <summary>
+            Telerik UI ChartCategoryAxisTitleMargin
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleMarginBase.Bottom">
+            <summary>
+            The bottom margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleMarginBase.Left">
+            <summary>
+            The left margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleMarginBase.Right">
+            <summary>
+            The right margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitleMarginBase.Top">
+            <summary>
+            The top margin of the title.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartCategoryAxisTitlePaddingBase">
+            <summary>
+            Telerik UI ChartCategoryAxisTitlePadding
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitlePaddingBase.Bottom">
+            <summary>
+            The bottom padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitlePaddingBase.Left">
+            <summary>
+            The left padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitlePaddingBase.Right">
+            <summary>
+            The right padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartCategoryAxisTitlePaddingBase.Top">
+            <summary>
+            The top padding of the title.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartLegendBase">
+            <summary>
+            Telerik UI ChartLegend
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Background">
+            <summary>
+            The background color of the legend. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Height">
+            <summary>
+            The legend height when the legend.orientation is set to "vertical".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.OffsetX">
+            <summary>
+            The X offset of the chart legend. The offset is relative to the default position of the legend. For instance, a value of 20 will move the legend 20 pixels to the right of its initial position. A negative value will move the legend to the left of its current position.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.OffsetY">
+            <summary>
+            The Y offset of the chart legend.  The offset is relative to the current position of the legend. For instance, a value of 20 will move the legend 20 pixels down from its initial position. A negative value will move the legend upwards from its current position.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Reverse">
+            <summary>
+            If set to true the legend items will be reversed.Available in versions 2013.3.1306 and later.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Spacing">
+            <summary>
+            The spacing between the labels in pixels when the legend.orientation is "horizontal".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Visible">
+            <summary>
+            If set to true the chart will display the legend. By default the chart legend is visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Width">
+            <summary>
+            The legend width when the legend.orientation is set to "horizontal".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Align">
+            <summary>
+            Specifies the legend align.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Orientation">
+            <summary>
+            Specifies the legend orientation.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBase.Position">
+            <summary>
+            Specifies the legend position.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartLegendBorderBase">
+            <summary>
+            Telerik UI ChartLegendBorder
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBorderBase.Color">
+            <summary>
+            The color of the border. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBorderBase.DashType">
+            <summary>
+            The dash type of the border.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendBorderBase.Width">
+            <summary>
+            The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartLegendLabelsBase">
+            <summary>
+            Telerik UI ChartLegendLabels
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsBase.Color">
+            <summary>
+            The text color of the labels. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsBase.Font">
+            <summary>
+            The font style of the labels. Accepts a valid CSS color string, for example "20px 'Courier New'".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsBase.Template">
+            <summary>
+            The template which renders the labels.The fields which can be used in the template are: text - the text the legend item.; series - the data series.; value - the point value. (only for donut and pie charts) or percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts..
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartLegendLabelsMarginBase">
+            <summary>
+            Telerik UI ChartLegendLabelsMargin
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsMarginBase.Bottom">
+            <summary>
+            The bottom margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsMarginBase.Left">
+            <summary>
+            The left margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsMarginBase.Right">
+            <summary>
+            The right margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsMarginBase.Top">
+            <summary>
+            The top margin of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartLegendLabelsPaddingBase">
+            <summary>
+            Telerik UI ChartLegendLabelsPadding
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsPaddingBase.Bottom">
+            <summary>
+            The bottom padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsPaddingBase.Left">
+            <summary>
+            The left padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsPaddingBase.Right">
+            <summary>
+            The right padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendLabelsPaddingBase.Top">
+            <summary>
+            The top padding of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartLegendMarginBase">
+            <summary>
+            Telerik UI ChartLegendMargin
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendMarginBase.Bottom">
+            <summary>
+            The bottom margin of the chart legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendMarginBase.Left">
+            <summary>
+            The left margin of the chart legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendMarginBase.Right">
+            <summary>
+            The right margin of the chart legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendMarginBase.Top">
+            <summary>
+            The top margin of the chart legend.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartLegendPaddingBase">
+            <summary>
+            Telerik UI ChartLegendPadding
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendPaddingBase.Bottom">
+            <summary>
+            The bottom padding of the chart legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendPaddingBase.Left">
+            <summary>
+            The left padding of the chart legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendPaddingBase.Right">
+            <summary>
+            The right padding of the chart legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartLegendPaddingBase.Top">
+            <summary>
+            The top padding of the chart legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Axis">
+            <summary>
+            The name of the value axis to use.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.CategoryAxis">
+            <summary>
+            The name of the category axis to use for the series.The first axis will be used if no categoryAxis is specified.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.CategoryField">
+            <summary>
+            The data item field which contains the category name or date.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Color">
+            <summary>
+            The series base color. The supported values are: CSS color string, including hex and rgb or function(point) - user-defined function that will be evaluated for each point. Returning undefined will assume the default series color..
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.ColorField">
+            <summary>
+            The data item field which contains the series color.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Data">
+            <summary>
+            The data of the series.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.ExplodeField">
+            <summary>
+            The data item field which contains a boolean value indicating whether the sector is exploded.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Field">
+            <summary>
+            The data item field which contains the series value. The field name should be a valid Javascript identifier and should contain only alphanumeric characters (or "$" or "_"), and may not start with a digit.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Gap">
+            <summary>
+            The distance between categories expressed as a percentage of the bar width.See the related spacing setting.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.HoleSize">
+            <summary>
+            The diameter of the donut hole in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Margin">
+            <summary>
+            The margin around each donut series (ring). A numeric value will set all margins.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Name">
+            <summary>
+            The name of the chart series which is visible in the legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.NegativeColor">
+            <summary>
+            The color to use for bar, column or waterfall series with negative values. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Opacity">
+            <summary>
+            The series opacity. By default the series are opaque.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Padding">
+            <summary>
+            The padding around the chart (equal on all sides).
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Size">
+            <summary>
+            The or radius of the chart donut series in pixels. If not set, the available space is split evenly between the series.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Spacing">
+            <summary>
+            The distance between series points within a category. Expressed as a percentage of the bar width.See the related gap setting.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.StartAngle">
+            <summary>
+            The start angle (degrees) of the first donut or pie segment.Angles increase clockwise and zero is to the left. Negative values are acceptable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Visible">
+            <summary>
+            Sets the visible property of a chart series
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.VisibleInLegend">
+            <summary>
+            A value indicating whether to show the point category name (for funnel, donut and pie series) or series name (for other available series types) in the legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.VisibleInLegendField">
+            <summary>
+            The data item field which indicates whether to show the point category name in the legend.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.ZIndex">
+            <summary>
+            An optional Z-index that can be used to change the default stacking order of series.The series with the highest Z-index will be placed on top.Series with no Z-index will use the default stacking order based on series type. For example line series will be on top with bar and area following below.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Aggregate">
+            <summary>
+            Specifies the preferred series aggregate.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.MissingValues">
+            <summary>
+            Specifies the behavior for handling missing values in the series.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Style">
+            <summary>
+            Specifies the preferred rendering style.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesBase.Type">
+            <summary>
+            The type of the series.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesItemsBase">
+            <summary>
+            Telerik UI ChartSeriesItems
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesLabelsBase">
+            <summary>
+            Telerik UI ChartSeriesLabels
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Background">
+            <summary>
+            The background color of the labels. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Color">
+            <summary>
+            The text color of the labels. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Distance">
+            <summary>
+            The distance of the labels when series.type is set to "donut" or "pie".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Font">
+            <summary>
+            The font style of the labels. Accepts a valid CSS color string, for example "20px 'Courier New'".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Format">
+            <summary>
+            The format of the labels. Uses kendo.format.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Rotation">
+            <summary>
+            The rotation angle of the labels. By default, the labels are not rotated.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Template">
+            <summary>
+            The template which renders the chart series label.The fields which can be used in the template are: category - the category name. Available for area, bar, column, bubble, donut, line, pie and waterfall series.; dataItem - the original data item used to construct the point. Will be null if binding to array.; percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.; series - the data series; stackValue - the cumulative point value on the stack. Available only for stackable series.; value - the point value. Can be a number or object containing each bound field.; runningTotal - the sum of point values since the last "runningTotal" summary point. Available for waterfall series. or total - the sum of all previous series values. Available for waterfall series..
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Visible">
+            <summary>
+            If set to true the chart will display the series labels. By default chart series labels are not displayed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Align">
+            <summary>
+            Specifies the alignment of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBase.Position">
+            <summary>
+            Specifies the position of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesLabelsBorderBase">
+            <summary>
+            Telerik UI ChartSeriesLabelsBorder
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBorderBase.Color">
+            <summary>
+            The color of the border. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBorderBase.DashType">
+            <summary>
+            The dash type of the border.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsBorderBase.Width">
+            <summary>
+            The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesLabelsMarginBase">
+            <summary>
+            Telerik UI ChartSeriesLabelsMargin
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsMarginBase.Bottom">
+            <summary>
+            The bottom margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsMarginBase.Left">
+            <summary>
+            The left margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsMarginBase.Right">
+            <summary>
+            The right margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsMarginBase.Top">
+            <summary>
+            The top margin of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesLabelsPaddingBase">
+            <summary>
+            Telerik UI ChartSeriesLabelsPadding
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsPaddingBase.Bottom">
+            <summary>
+            The bottom padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsPaddingBase.Left">
+            <summary>
+            The left padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsPaddingBase.Right">
+            <summary>
+            The right padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLabelsPaddingBase.Top">
+            <summary>
+            The top padding of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesLineBase">
+            <summary>
+            Telerik UI ChartSeriesLine
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLineBase.Color">
+            <summary>
+            The line color. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLineBase.Opacity">
+            <summary>
+            The line opacity. By default the line is opaque.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLineBase.Width">
+            <summary>
+            The line width in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesLineBase.Style">
+            <summary>
+            Specifies the preferred line rendering style.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesMarkersBase">
+            <summary>
+            Telerik UI ChartSeriesMarkers
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesMarkersBase.Background">
+            <summary>
+            The background color of the series markers.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesMarkersBase.Size">
+            <summary>
+            The marker size in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesMarkersBase.Visible">
+            <summary>
+            If set to true the chart will display the series markers. By default chart series markers are displayed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesMarkersBase.Rotation">
+            <summary>
+            The rotation angle of the markers.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesMarkersBase.Type">
+            <summary>
+            Specifies the shape of the marker.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesMarkersBorderBase">
+            <summary>
+            Telerik UI ChartSeriesMarkersBorder
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesMarkersBorderBase.Color">
+            <summary>
+            The color of the border. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesMarkersBorderBase.Width">
+            <summary>
+            The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartSeriesStackBase">
+            <summary>
+            Telerik UI ChartSeriesStack
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesStackBase.Enabled">
+            <summary>
+            Enables or disables the setting.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesStackBase.Group">
+            <summary>
+            Indicates that the series should be stacked in a group with the specified name.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartSeriesStackBase.Type">
+            <summary>
+            Specifies the preferred stack type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartTitleBase">
+            <summary>
+            Telerik UI ChartTitle
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBase.Background">
+            <summary>
+            The background color of the title. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBase.Color">
+            <summary>
+            The text color of the title. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBase.Font">
+            <summary>
+            The font of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBase.Text">
+            <summary>
+            The text of the chart title. You can also set the text directly for a title with default options.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBase.Visible">
+            <summary>
+            If set to true the chart will display the title. By default the title will be displayed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBase.Align">
+            <summary>
+            Specifies the text alignment.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBase.Position">
+            <summary>
+            Specifies the title position.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartTitleBorderBase">
+            <summary>
+            Telerik UI ChartTitleBorder
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBorderBase.Color">
+            <summary>
+            The color of the border. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBorderBase.DashType">
+            <summary>
+            The dash type of the chart title border.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleBorderBase.Width">
+            <summary>
+            The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartTitleMarginBase">
+            <summary>
+            Telerik UI ChartTitleMargin
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleMarginBase.Bottom">
+            <summary>
+            The bottom margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleMarginBase.Left">
+            <summary>
+            The left margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleMarginBase.Right">
+            <summary>
+            The right margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitleMarginBase.Top">
+            <summary>
+            The top margin of the title.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartTitlePaddingBase">
+            <summary>
+            Telerik UI ChartTitlePadding
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitlePaddingBase.Bottom">
+            <summary>
+            The bottom padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitlePaddingBase.Left">
+            <summary>
+            The left padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitlePaddingBase.Right">
+            <summary>
+            The right padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartTitlePaddingBase.Top">
+            <summary>
+            The top padding of the title.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxesBase">
+            <summary>
+            Telerik UI ChartValueAxes
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.AxisCrossingValue">
+            <summary>
+            Value at which the category axis crosses this axis. (Only for object)Value indices at which the category axes cross the value axis. (Only for array)Date at which the category axis crosses this axis. (Only for date)
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.Background">
+            <summary>
+            The background color of the axis.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.Color">
+            <summary>
+            The color of the value axis. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.MajorUnit">
+            <summary>
+            The interval between major divisions. If the valueAxis.type is set to "log", the majorUnit value will be used for the base of the logarithm.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.Max">
+            <summary>
+            The maximum value of the axis.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.Min">
+            <summary>
+            The minimum value of the axis. Under certain conditions, the narrowRange setting can overwrite this setting. To give priority to the min setting of your choice, set valueAxis.narrowRange to false.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.MinorUnit">
+            <summary>
+            The interval between minor divisions. It defaults to 1/5 of the valueAxis.majorUnit. If the valueAxis.type is set to "log", the minorUnit value represents the number of divisions between two major units and defaults to the major unit minus one.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.Name">
+            <summary>
+            The unique axis name. Used to associate a series with a value axis using the series.axis option.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.NarrowRange">
+            <summary>
+            If set to true the Chart will narrow the value axis range in order to display data points in better detail. Setting it to false will force the automatic axis range to start from 0 or the explicitly specified valueAxis.min value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.Visible">
+            <summary>
+            If set to true the chart will display the value axis. By default the value axis is visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisBase.Type">
+            <summary>
+            Specifies the axis type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisLabelsBase">
+            <summary>
+            Telerik UI ChartValueAxisLabels
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Background">
+            <summary>
+            The background color of the labels. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Color">
+            <summary>
+            The text color of the labels. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Format">
+            <summary>
+            The format used to display the labels. Uses kendo.format. Contains one placeholder ("{0}") which represents the category value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Mirror">
+            <summary>
+            If set to true the chart will mirror the axis labels and ticks. If the labels are normally on the left side of the axis, mirroring the axis will render them to the right.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Skip">
+            <summary>
+            The number of labels to skip. By default no labels are skipped.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Step">
+            <summary>
+            Label rendering step. Every n-th label is rendered where n is the step
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Template">
+            <summary>
+            The template which renders the labels.The fields which can be used in the template are: value - the value value.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Visible">
+            <summary>
+            If set to true the chart will display the value axis labels. By default the category axis labels are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBase.Position">
+            <summary>
+            Specifies the position of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisLabelsBorderBase">
+            <summary>
+            Telerik UI ChartValueAxisLabelsBorder
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBorderBase.Color">
+            <summary>
+            The color of the border. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBorderBase.DashType">
+            <summary>
+            The dash type of the border.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsBorderBase.Width">
+            <summary>
+            The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisLabelsMarginBase">
+            <summary>
+            Telerik UI ChartValueAxisLabelsMargin
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsMarginBase.Bottom">
+            <summary>
+            The bottom margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsMarginBase.Left">
+            <summary>
+            The left margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsMarginBase.Right">
+            <summary>
+            The right margin of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsMarginBase.Top">
+            <summary>
+            The top margin of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisLabelsPaddingBase">
+            <summary>
+            Telerik UI ChartValueAxisLabelsPadding
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsPaddingBase.Bottom">
+            <summary>
+            The bottom padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsPaddingBase.Left">
+            <summary>
+            The left padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsPaddingBase.Right">
+            <summary>
+            The right padding of the labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsPaddingBase.Top">
+            <summary>
+            The top padding of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisLabelsRotationBase">
+            <summary>
+            Telerik UI ChartValueAxisLabelsRotation
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsRotationBase.Angle">
+            <summary>
+            The rotation angle of the labels. By default the labels are not rotated. Can be set to "auto" if the axis is horizontal in which case the labels will be rotated only if the slot size is not sufficient for the entire labels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisLabelsRotationBase.Align">
+            <summary>
+            Specifies the rotation of the labels.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisMajorGridLinesBase">
+            <summary>
+            Telerik UI ChartValueAxisMajorGridLines
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorGridLinesBase.Color">
+            <summary>
+            The color of the major grid lines. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorGridLinesBase.DashType">
+            <summary>
+            The dash type of the major grid lines.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorGridLinesBase.Visible">
+            <summary>
+            If set to false the chart will not display the major grid lines. By default the major grid lines are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorGridLinesBase.Width">
+            <summary>
+            The width of the value axis major grid lines in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorGridLinesBase.Step">
+            <summary>
+            The step of the value axis major grid lines.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorGridLinesBase.Skip">
+            <summary>
+            The skip of the value axis major grid lines.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisMajorTicksBase">
+            <summary>
+            Telerik UI ChartValueAxisMajorTicks
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorTicksBase.Color">
+            <summary>
+            The color of the value axis major ticks lines. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorTicksBase.Size">
+            <summary>
+            The length of the tick line in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorTicksBase.Visible">
+            <summary>
+            If set to true the chart will display the value axis major ticks. By default the value axis major ticks are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorTicksBase.Step">
+            <summary>
+            The step of the value axis major ticks.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMajorTicksBase.Skip">
+            <summary>
+            The skip of the value axis major ticks.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisMinorGridLinesBase">
+            <summary>
+            Telerik UI ChartValueAxisMinorGridLines
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorGridLinesBase.Color">
+            <summary>
+            The color of the minor grid lines. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorGridLinesBase.DashType">
+            <summary>
+            The dash type of the minor grid lines.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorGridLinesBase.Visible">
+            <summary>
+            If set to true the chart will display the minor grid lines. By default the minor grid lines are visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorGridLinesBase.Width">
+            <summary>
+            The width of the value axis minor grid lines in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorGridLinesBase.Step">
+            <summary>
+            The step of the value axis minor grid lines.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorGridLinesBase.Skip">
+            <summary>
+            The skip of the value axis minor grid lines.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisMinorTicksBase">
+            <summary>
+            Telerik UI ChartValueAxisMinorTicks
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorTicksBase.Color">
+            <summary>
+            The color of the value axis minor ticks lines. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorTicksBase.Size">
+            <summary>
+            The length of the tick line in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorTicksBase.Visible">
+            <summary>
+            If set to true the chart will display the value axis minor ticks. By default the value axis minor ticks are not visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorTicksBase.Width">
+            <summary>
+            The width of the minor ticks in pixels.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorTicksBase.Step">
+            <summary>
+            The step of the value axis minor ticks.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisMinorTicksBase.Skip">
+            <summary>
+            The skip of the value axis minor ticks.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisTitleBase">
+            <summary>
+            Telerik UI ChartValueAxisTitle
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBase.Background">
+            <summary>
+            The background color of the title. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBase.Color">
+            <summary>
+            The text color of the title. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBase.Font">
+            <summary>
+            The font style of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBase.Rotation">
+            <summary>
+            The rotation angle of the title. By default the title is not rotated.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBase.Text">
+            <summary>
+            The text of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBase.Visible">
+            <summary>
+            If set to true the chart will display the value axis title. By default the value axis title is visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBase.Position">
+            <summary>
+            Specifies the title position.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisTitleBorderBase">
+            <summary>
+            Telerik UI ChartValueAxisTitleBorder
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBorderBase.Color">
+            <summary>
+            The color of the border. Accepts a valid CSS color string, including hex and rgb.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBorderBase.DashType">
+            <summary>
+            The dash type of the border.The following dash types are supported: "dash" - a line consisting of dashes; "dashDot" - a line consisting of a repeating pattern of dash-dot; "dot" - a line consisting of dots; "longDash" - a line consisting of a repeating pattern of long-dash; "longDashDot" - a line consisting of a repeating pattern of long-dash-dot; "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot or "solid" - a solid line.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleBorderBase.Width">
+            <summary>
+            The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisTitleMarginBase">
+            <summary>
+            Telerik UI ChartValueAxisTitleMargin
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleMarginBase.Bottom">
+            <summary>
+            The bottom margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleMarginBase.Left">
+            <summary>
+            The left margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleMarginBase.Right">
+            <summary>
+            The right margin of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitleMarginBase.Top">
+            <summary>
+            The top margin of the title.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.ChartValueAxisTitlePaddingBase">
+            <summary>
+            Telerik UI ChartValueAxisTitlePadding
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitlePaddingBase.Bottom">
+            <summary>
+            The bottom padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitlePaddingBase.Left">
+            <summary>
+            The left padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitlePaddingBase.Right">
+            <summary>
+            The right padding of the title.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.ChartValueAxisTitlePaddingBase.Top">
+            <summary>
+            The top padding of the title.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikChartBase">
+            <summary>
+            Telerik UI Chart component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikChartBase.Width">
+            <summary>
+            Specifies the width of the chart.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikChartBase.Height">
+            <summary>
+            Specifies the height of the chart.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikChartBase.Refresh">
+            <summary>
+            Re-renders the chart.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikChartBase.Transitions">
+            <summary>
+            If set to true the chart will play animations when displaying the series. By default animations are enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikChartBase.RenderAs">
+            <summary>
+            Specifies the preferred widget rendering mode.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.Top">
+            <summary>
+            Defines the top position of the animation container
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.Left">
+            <summary>
+            Defines the left position of the animation container
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.Width">
+            <summary>
+            Defines the width of the animation container
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.Height">
+            <summary>
+            Defines the height of the animation container
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.ShowDelay">
+            <summary>
+            Defines the show delay of the animation container. Default delay is 20ms.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.HideDelay">
+            <summary>
+            Defines the hide delay of the animation container. Default delay is 20ms.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.AnimationType">
+            <summary>
+            Defines the animation type of the container. Default value is AnimationType.SlideDown.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.AnimationDuration">
+            <summary>
+            Defines the animation duration of the container. Default AnimationDuration is 300ms.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.ParentInlineStyle">
+            <summary>
+            Defines inline style to be added to the k-animation-container element
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.ParentClass">
+            <summary>
+            Defines class to be added to the k-animation-container element
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.Class">
+            <summary>
+            Defines class names to be added to the k-child-animation-container element
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.AnimationBase.Visible">
+            <summary>
+            Defines the visibility of the animation container. Does not use animations.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Common.Filters.FilterMenu.TelerikFilterMenuBase">
+            <summary>
+            The class for the Telerik FilterMenu component
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Common.Filters.Filter.TelerikFilterBase">
+            <summary>
+            The class for the Telerik Filter component
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Common.Filters.Filter.TelerikFilterExpressionBase">
+            <summary>
+            The class for the Telerik FilterExpression component
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Icon.IIconContainer.Icon">
+            <summary>
+            The predefined Telerik icon in the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Icon.IIconContainer.IconClass">
+            <summary>
+            The custom CSS class on the font icon element of the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Icon.IIconContainer.ImageUrl">
+            <summary>
+            The URL for an image in the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Icon.IIconContainer.SpriteClass">
+            <summary>
+            The custom CSS class for a sprite icon.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.BindingComponentBase`1.TextField">
+            <summary>
+            Defines the Text DataField of the DataSource
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.BindingComponentBase`1.IconClassField">
+            <summary>
+            Defines the IconClass DataField of the DataSource.
+            It's value is taken with priority over the Icon and ImageUrl field.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.BindingComponentBase`1.IconField">
+            <summary>
+            Defines the Icon DataField of the DataSource.
+            It's value is taken with priority over the ImageUrl field.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.BindingComponentBase`1.ImageUrlField">
+            <summary>
+            Defines the ImageUrl DataField of the DataSource
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.BindingComponentBase`1.UrlField">
+            <summary>
+            Defines the Url DataField of the DataSource
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.BindingComponentBase`1.ItemTemplate">
+            <summary>
+            Defines the template for the child items
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.HierarchicalBindingComponentBase`1.IdField">
+            <summary>
+            Defines the Id DataField of the DataSource
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.HierarchicalBindingComponentBase`1.ParentIdField">
+            <summary>
+            Defines the ParentId DataField of the DataSource. Use this DataField when the component is bound to a flat data structure.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.HierarchicalBindingComponentBase`1.HasChildrenField">
+            <summary>
+            Defines the HasChildren DataField of the DataSource
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.Layout.HierarchicalBindingComponentBase`1.ItemsField">
+            <summary>
+            Defines the Items DataField of the DataSource that contains the child nodes
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Common.Layout.ItemElementBase`1">
+            <summary>
+            The class for the Telerik NavigationItemElementBase component
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.TelerikInputBase`1.Enabled">
+            <summary>
+            Specifies whether the Component is enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.TelerikInputBase`1.Class">
+            <summary>
+            Specifies css classes to be applied to the Component's wrapper.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.TelerikInputBase`1.ValueExpression">
+            <summary>
+            Specifies the expression that identifies the bound value
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.TelerikInputBase`1.ValueChanged">
+            <summary>
+             Specifies the callback that's called when the value changes
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.TelerikInputBase`1.Value">
+            <summary>
+            Specifies the value of the input. Used with two-way binding.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.TelerikInputBase`1.InternalFieldIdentifier">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.TelerikInputBase`1.OnChange">
+            <summary>
+             Specifies the callback that's called when the new value is committed
+             either through the Enter key, or when the Component loses focus
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Common.TelerikInputBase`1.Width">
+            <summary>
+            Specifies the width of the Component.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikIconBase">
+            <summary>
+            Renders a span with a font icon. You can use the predefined Telerik IconName members or add your own class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikIconBase.Icon">
+            <summary>
+            The predefined Telerik Icon rendered in the button. Can take a member of the IconName class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikIconBase.IconClass">
+            <summary>
+            A custom CSS class for the icon element.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikIconBase.ImageUrl">
+            <summary>
+            The URL of an image inside the button. Takes precedence over other parameters.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikIconBase.SpriteClass">
+            <summary>
+            The CSS class to define an image from a sprite.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.DateInput.DateInputJsAdapterBase.UpdateDate(System.String)">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.DateInput.DateInputJsAdapterBase.Enter">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.DateInput.DateInputJsAdapterBase.Focus">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.DateInput.DateInputJsAdapterBase.Blur">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikDateInputBase`1">
+            <summary>
+            The class for the DateInput component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDateInputBase`1.Format">
+            <summary>
+            Specifies the format of the DateInput.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDateInputBase`1.ParsingErrorMessage">
+            <summary>
+            Specifies the error message used when displaying a parsing error.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDateInputBase`1.Min">
+            <summary>
+            Sets the minimum allowed date of the DateInput.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDateInputBase`1.Max">
+            <summary>
+            Sets the maximum allowed date of the DateInput.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.DatePicker.DatePickerJsAdapterBase.Close">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.DatePicker.DatePickerJsAdapterBase.ToggleMouseDown">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikDatePickerBase`1">
+            <summary>
+            The class for the DatePicker component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDatePickerBase`1.View">
+            <summary>
+            Specifies the current view that will be displayed in the popup calendar.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDatePickerBase`1.BottomView">
+            <summary>
+            Defines the bottommost view in the popup calendar to which the user can navigate.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDatePickerBase`1.Min">
+            <summary>
+            Sets the minimum allowed date of the date picker.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDatePickerBase`1.Max">
+            <summary>
+            Sets the maximum allowed date of the date picker.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDatePickerBase`1.DisabledDates">
+            <summary>
+            Specifies a list of dates that can not be selected.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDatePickerBase`1.PopupHeight">
+            <summary>
+            Defines the height of the DatePicker's Popup
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDatePickerBase`1.PopupWidth">
+            <summary>
+            Defines the width of the DatePicker's Popup
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDatePickerBase`1.Format">
+            <summary>
+            Specifies the format of the DateInput of the DatePicker
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.DateTimePicker.DateTimeSelectorBase`1">
+            <summary>
+            The class for the TimePicker Time Selector component.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikDateTimePickerBase`1">
+            <summary>
+            The class for the DateTimePicker component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDateTimePickerBase`1.Min">
+            <summary>
+            Sets the minimum allowed date of the datetime picker.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDateTimePickerBase`1.Max">
+            <summary>
+            Sets the maximum allowed date of the datetime picker.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDateTimePickerBase`1.Format">
+            <summary>
+            Specifies the format of the DateInput of the DateTimePicker
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikDateTimePickerBase`1.CloseAsync">
+            <summary>
+            Hides the time picker popup.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikDropDownListBase`2">
+            <summary>
+            The class for the DropDownList component
+            </summary>
+            <typeparam name="TItem">Type of the model if you cannot provide a Value</typeparam>
+            <typeparam name="TValue">Type of the Value if you cannot provide a reference to it</typeparam>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.TabIndex">
+            <summary>
+            Defines the tabindex of the DropDownList
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.TextField">
+            <summary>
+            Defines the TextField of the DropDownList's Data. Default value: "Text".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.ValueField">
+            <summary>
+            Defines the ValueField of the DropDownList's Data. Default value: "Value".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.DefaultItem">
+            <summary>
+            The hint that is shown if no item is selected. Set this property to an instance of the model class to which the dropdown is bound.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.Data">
+            <summary>
+            Defines the DropDownList's Data
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.Width">
+            <summary>
+            Specifies the width of the Component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.PopupHeight">
+            <summary>
+            Defines the height of the DropDownList's Popup
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.PopupWidth">
+            <summary>
+            Defines the width of the DropDownList's Popup
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.HeaderTemplate">
+            <summary>
+            Defines the header of the DropDownList
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.FooterTemplate">
+            <summary>
+            Defines the footer of the DropDownList
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.ItemTemplate">
+            <summary>
+            Defines the item template of the DropDownList
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.ValueTemplate">
+            <summary>
+            Defines the value template of the DropDownList
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikDropDownListBase`2.SelectedDataItem">
+            <summary>
+            The currently selected model in the component.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Grid.Grouping.GroupHeaderBase">
+            <summary>
+            The group indicator.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Grid.Grouping.GroupIndicatorBase">
+            <summary>
+            The group indicator.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.Grouping.GroupIndicatorBase.OnRemove">
+            <summary>
+            Triggered when the indicator is removed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Grid.Grouping.GroupPanelBase">
+            <summary>
+            The group panel.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.Grouping.GroupPanelBase.OnGroupAdd">
+            <summary>
+            Triggered when a group is added.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.Grouping.GroupPanelBase.OnGroupRemove">
+            <summary>
+            Triggered when a group is removed.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Grid.IGridBoundColumn">
+            <summary>
+            The interface that describes a column bound to a data field in the grid component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridBoundColumn.Field">
+            <summary>
+            The name of the field whose data the grid will display. You can use the nameof operator.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridBoundColumn.Editable">
+            <summary>
+            Whether the field can be edited by the user. If set to false,
+            an editor will not be rendered for this column when the user edits an existing record.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridBoundColumn.Filterable">
+            <summary>
+            Whether the column is filterable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridBoundColumn.Groupable">
+            <summary>
+            Whether the column is groupable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridBoundColumn.Template">
+            <summary>
+            The template for the cells of this column. Used when the row is in read mode.
+            You can render custom components and apply logic in it.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridBoundColumn.EditorTemplate">
+            <summary>
+            The template rendered in the cell when the user is editing the row.
+            You can render custom components and apply logic in it.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Grid.IGridCheckboxColumn">
+            <summary>
+            The interface that describes a grid checkbox column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridCheckboxColumn.SelectAll">
+            <summary>
+            Defines whether to display a checkbox in the header
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Grid.IGridColumn">
+            <summary>
+            The interface that describes a grid column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridColumn.Title">
+            <summary>
+            The string title rendered in the column header.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridColumn.Width">
+            <summary>
+            The width of the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridCommandColumn.Commands">
+            <summary>
+            For internal use.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Grid.IGridCommandColumn.ChildContent">
+            <summary>
+            The text rendered in the button.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.GridCommandEventArgs">
+            <summary>
+            The class that describes the event arguments to the grid events.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandEventArgs.IsCancelled">
+            <summary>
+            Defines whether the command should be cancelled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandEventArgs.Item">
+            <summary>
+            Defines the item that has been affected. You can cast it to the model type to which you bind the grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandEventArgs.IsNew">
+            <summary>
+            Defines whether the item is recently added by the end user through the grid interface.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandEventArgs.Field">
+            <summary>
+            Defines the updated field. Available for incell editing.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandEventArgs.Value">
+            <summary>
+            Defines the updated value. Available for incell editing.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.GridReadEventArgs">
+            <summary>
+            The class that describes the event arguments of the OnRead event of the grid.
+            Used to implement custom data source read operations - fetching data, paging, filtering, sorting and so on.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridReadEventArgs.Request">
+            <summary>
+            Defines the DataSourceRequest instance containing
+            the sort, filter and paging state of the grid.
+            You can use the data from it to call the appropriate API in your project in order to implement custom logic.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.GridCommandButtonBase">
+            <summary>
+            The class for the command button in a grid command column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.Command">
+            <summary>
+            The command name the button will invoke. Supports custom command names, as well as the built-in "Save", "Edit", "Cancel", "Add" and "Delete" commands.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.ShowInEdit">
+            <summary>
+            Defines whether the button will be shown when the row is in edit mode. Set to false to make it visible only in read mode.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.OnClick">
+            <summary>
+            The click handler that will be executed when the button is clicked. For the built-in commands, 
+            consider using only the built-in grid events to handle the CRUD operations.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.Class">
+            <summary>
+            The CSS class that will be rendered on the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.Icon">
+            <summary>
+            The predefined Telerik icon that will be rendered in the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.IconClass">
+            <summary>
+            The CSS class for use with custom font icons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.ImageUrl">
+            <summary>
+            URL to a custom image or sprite for the icon.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.SpriteClass">
+            <summary>
+            CSS class rendered for use with sprite icons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.Enabled">
+            <summary>
+            Whether the button is enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.Hidden">
+            <summary>
+            For internal use.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandButtonBase.Primary">
+            <summary>
+            Whether the button is primary (has stronger colors).
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikGridBase`1">
+            <summary>
+            The class for the Telerik Grid component.
+            </summary>
+            <typeparam name="TItem">The type of the model to which the grid is bound.</typeparam>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.GridColumns">
+            <summary>
+            Defines the container for the Grid columns.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.GridToolBar">
+            <summary>
+            Defines the toolbar of the Grid
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.Class">
+            <summary>
+            The CSS class that will be rendered on the grid wrapping element.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.Height">
+            <summary>
+            Defines the height of the Grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.EditMode">
+            <summary>
+            Defines the EditMode of the Grid. Supports "Inline", "Popup" and "Incell" editing.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.RowTemplate">
+            <summary>
+            Defines the row template of the grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.DetailTemplate">
+            <summary>
+            Defines the detail template of the grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.Data">
+            <summary>
+            Defines the data source of the Grid.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.TotalCount">
+            <summary>
+            Defines the total number of records. Use only when the grid is
+            configured for manual sorting, paging and filtering with the OnRead event.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.FilterMode">
+            <summary>
+            Defines the Filter Mode of the Grid
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.SelectionMode">
+            <summary>
+            Defines the Selection Mode of the Grid
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.SelectedItems">
+            <summary>
+            Defines the predefined collection of selected items
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.PageSize">
+            <summary>
+            Defines the page size of the Grid. Requires Pageable="true".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.Page">
+            <summary>
+            Defines the selected page. Default value is 1. Requires Pageable="true".
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.Pageable">
+            <summary>
+            Defines whether the Grid is pageable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.Sortable">
+            <summary>
+            Defines whether the Grid is sortable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.Groupable">
+            <summary>
+            Defines whether the Grid is groupable.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.OnCreate">
+            <summary>
+            Fires when the Create command is executed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.OnEdit">
+            <summary>
+            Fires when the Edit command is executed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.OnUpdate">
+            <summary>
+            Fires when the Update command is executed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.OnCancel">
+            <summary>
+            Fires when the Cancel command is executed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.OnDelete">
+            <summary>
+            Fires when the Delete command is executed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikGridBase`1.OnRead">
+            <summary>
+            Fires when the data source is read. Use this to attach your own paging,
+            sorting and filtering logic. Once attached, you must implement all such data source operations here,
+            the grid will no longer perform them for you.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikGridBase`1.Telerik#Blazor#Components#Grid#IGridContainer#AddColumn(Telerik.Blazor.Components.Grid.IGridColumn)">
+            <summary>
+            Adds a column instance to the grid.
+            </summary>
+            <param name="column">The column instance to add.</param>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikGridBase`1.Telerik#Blazor#Components#Grid#IGridContainer#RemoveColumn(Telerik.Blazor.Components.Grid.IGridColumn)">
+            <summary>
+            Removes the column instance from the grid.
+            </summary>
+            <param name="column">The reference to the column instance you want to remove.</param>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Menu.MenuItemBase`1">
+            <summary>
+            The class for the Menu Item
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikMenuBase`1">
+            <summary>
+            The class for the Telerik Menu Component
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikMenuBase`1.Orientation">
+            <summary>
+            Defines the Orientation of Menu - vertical or horizontal.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikMenuBase`1.Data">
+            <summary>
+            Defines the Menu's Data.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikMenuBase`1.OnClick">
+            <summary>
+            Defines the OnClick Event which is fired when clicking on a menu item.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.NumericTextBox.NumericTextBoxJsAdapterBase.Blur">
+            <summary>
+            For internal use only.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikNumericTextBoxBase`1">
+            <summary>
+            The class for the Numeric Textbox component.
+            </summary>
+            <typeparam name="T">The type of the object passed/bound to the Value property.</typeparam>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikNumericTextBoxBase`1.Arrows">
+            <summary>
+            Specifies whether the increment and decrement arrows will be displayed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikNumericTextBoxBase`1.Decimals">
+            <summary>
+            Specifies the number precision applied when typing.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikNumericTextBoxBase`1.Step">
+            <summary>
+            Specifies the value used to increment or decrement the component value.
+            Value will be rounded if it has a higher decimal count than the Decimals parameter
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikNumericTextBoxBase`1.Min">
+            <summary>
+            Specifies the smallest value the user can enter.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikNumericTextBoxBase`1.Max">
+            <summary>
+            Specifies the largest value the user can enter.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikNumericTextBoxBase`1.Format">
+            <summary>
+            Specifies the number format used when the component is not focused.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikNumericTextBoxBase`1.Text">
+            <summary>
+            Gets the current version of the user input. May be different depending on whether the textbox is focused.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Popup.TelerikPopupBase">
+            <summary>
+            A container that can be positioned and sized as desired, and shows with an animation.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.RootComponent.TelerikRootComponentFragmentBase">
+            <summary>
+            A container that can be positioned and sized as desired, and shows with an animation.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikRootComponentBase">
+            <summary>
+            The base class for the TelerikRootComponent that needs to be at the root of the main layout of the application.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikRootComponentBase.ChildContent">
+            <summary>
+            Everything else in the application. The TelerikRootComponent must be at the root of the main layout of the application.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TabStrip.ITab">
+            <summary>
+            Interface describing the public properties of a Tab instance you can access.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TabStrip.ITab.ChildContent">
+            <summary>
+            The contents of the tab.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TabStrip.ITab.Title">
+            <summary>
+            The title of the tab.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TabStrip.ITab.Disabled">
+            <summary>
+            Whether the tab is disabled so the user cannot select it.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TabStripTabBase">
+            <summary>
+            The class for a Tab in use under a Tab Strip component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TabStripTabBase.Title">
+            <summary>
+            The title of the tab rendered in the tab list.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TabStripTabBase.ChildContent">
+            <summary>
+            The contents of the tab.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TabStripTabBase.Disabled">
+            <summary>
+            Whether the tab is disabled so the user can't select it.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikTabStripBase">
+            <summary>
+            The class for the Telerik Tab Strip component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTabStripBase.TabPosition">
+            <summary>
+            The position of the tabs list in relation to the content.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTabStripBase.ActiveTabIndex">
+            <summary>
+            The currently active tab's index. If not set, the first tab will be active.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTabStripBase.ActiveTabIndexChanged">
+            <summary>
+            Fires when the active tab has changed
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikTextBoxBase">
+            <summary>
+            The Telerik TextBox class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTextBoxBase.Id">
+            <summary>
+            Specifies the id of the TextBox. If not set, a guid is used.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTextBoxBase.Label">
+            <summary>
+            Specifies the label of the TextBox.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TimePicker.TimeSelectorBase`1">
+            <summary>
+            The class for the TimePicker Time Selector component.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TimePicker.TimeSelectorCarouselBase">
+            <summary>
+            The class for the TimePicker Time Selector component.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikTimePickerBase`1">
+            <summary>
+            The class for the DatePicker component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTimePickerBase`1.Min">
+            <summary>
+            Sets the minimum allowed date of the time picker.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTimePickerBase`1.Max">
+            <summary>
+            Sets the maximum allowed date of the time picker.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTimePickerBase`1.Format">
+            <summary>
+            Specifies the format of the DateInput of the TimePicker
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikTimePickerBase`1.CloseAsync">
+            <summary>
+            Hides the time picker popup.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TreeViewExpandEventArgs">
+            <summary>
+            The class that describes the event arguments of the OnItemChange event of the TreeView.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TreeViewExpandEventArgs.Item">
+            <summary>
+            Defines the item that has been affected. You can cast it to the model type to which you bind the TreeView.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TreeViewExpandEventArgs.Expanded">
+            <summary>
+            Defines the expanded state value of the Item.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TreeView.TreeViewNodeBase">
+            <summary>
+            The class for the Telerik TreeViewNode component
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikTreeViewBase">
+            <summary>
+            The class for the Telerik TreeView component
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTreeViewBase.Data">
+            <summary>
+            Defines the data source of the TreeView.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTreeViewBase.TreeViewBindings">
+            <summary>
+            Defines the container for Item Fields per level.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikTreeViewBase.OnExpand">
+            <summary>
+            Fires when an item from the DataSource is expanded.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikTreeViewBase.Telerik#Blazor#Components#TreeView#ITreeViewContainer#AddBinding(Telerik.Blazor.Components.TreeViewBinding)">
+            <summary>
+            Adds a new binding. Can be useful for load on demand to add bindings dynamically.
+            </summary>
+            <param name="binding"></param>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikTreeViewBase.Telerik#Blazor#Components#TreeView#ITreeViewContainer#RemoveBinding(Telerik.Blazor.Components.TreeViewBinding)">
+            <summary>
+            Removes a binding. Can be useful for load on demand to manage bindings dynamically.
+            </summary>
+            <param name="binding"></param>
+        </member>
+        <member name="T:Telerik.Blazor.Components.WindowArgs">
+            <summary>
+            The event arguments passed to the Window component events.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.WindowArgs.IsCancelled">
+            <summary>
+            Whether the event will be cancelled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.WindowArgs.Window">
+            <summary>
+            The Window instance that fired the event.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.WindowArgs.#ctor(Telerik.Blazor.Components.TelerikWindowBase)">
+            <summary>
+            Creates a new instance of the event arguments object with a provided Window instance.
+            </summary>
+            <param name="window">The Window instance that will fire the event</param>
+        </member>
+        <member name="T:Telerik.Blazor.Components.Window.IWindowAction">
+            <summary>
+            The interface for an action button in the Window titlebar.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Window.IWindowAction.Name">
+            <summary>
+            The name of the action. Predefined Action Names are: Close, Minimize, Maximize.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Window.IWindowAction.IconClass">
+            <summary>
+            The CSS class rendered for the icon. You can use this to set custom font icons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Window.IWindowAction.Icon">
+            <summary>
+            The predefined Telerik icon that will be used. See the IconName class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Window.IWindowAction.OnClick">
+            <summary>
+            The EventCallback that will be executed when the action is clicked.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.Window.IWindowAction.Hidden">
+            <summary>
+            Whether the action button is hidden.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Components.TelerikWindowBase">
+            <summary>
+            The class for the Telerik Window component.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.WindowActions">
+            <summary>
+            Defines the action buttons of the Window
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.WindowTitle">
+            <summary>
+            Defines the title template of the Window
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.WindowContent">
+            <summary>
+            Defines the content of the Window
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Width">
+            <summary>
+            Defines the width of the Window. Overrides a predefined Size.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Height">
+            <summary>
+            Defines the height of the Window. Overrides a predefined Size.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Top">
+            <summary>
+            Defines the top position of the Window. 
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Left">
+            <summary>
+            Defines the left position of the Window.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Visible">
+            <summary>
+            Defines whether the Window is rendered. Can define initial visibility and toggle visibility at runtime.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.VisibleChanged">
+            <summary>
+            Fires when the Visible Parameter has changed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.State">
+            <summary>
+            Defines the state of the window. To be rendered minimized, maximized or in default state.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.StateChanged">
+            <summary>
+            Fires when the State Parameter has changed.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Size">
+            <summary>
+            Defines the predefined sizes of the Window.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Centered">
+            <summary>
+            Defines whether the Window will be centered. It is true by default.
+            Not respected if Window has Top or Left Position.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Modal">
+            <summary>
+            Whether the Window is modal.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.Class">
+            <summary>
+            The CSS class rendered in the main HTML element of the Window.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TelerikWindowBase.ActionCollection">
+            <summary>
+            The list of current Action buttons.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikWindowBase.Close">
+            <summary>
+            Closes (hides) the Window instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikWindowBase.Maximize">
+            <summary>
+            Maximizes the Window so it takes up its entire container.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikWindowBase.Minimize">
+            <summary>
+            Minimizes the Window so only its titlebar is shown.
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikWindowBase.Restore">
+            <summary>
+            Restores the Window to its standard state (not maximized, not minimized).
+            </summary>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikWindowBase.AddAction(Telerik.Blazor.Components.Window.IWindowAction)">
+            <summary>
+            Adds an action button to the titlebar.
+            </summary>
+            <param name="action">The new action instance to be added</param>
+        </member>
+        <member name="M:Telerik.Blazor.Components.TelerikWindowBase.RemoveAction(Telerik.Blazor.Components.Window.IWindowAction)">
+            <summary>
+            Removes the specified action button from the titlebar.
+            </summary>
+            <param name="action">The action instance to be removed</param>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCheckboxColumn.Title">
+             <summary>
+             The string title rendered in the column header.
+            
+             </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCheckboxColumn.Width">
+             <summary>
+             The width of the column.
+            
+             </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCheckboxColumn.SelectAll">
+            <summary>
+            Checkbox is rendered in the Column header. Title option gets ignored.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridColumn.Field">
+            <summary>
+            The name of the field whose data the grid will display. You can use the nameof operator.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridColumn.Width">
+            <summary>
+            The width of the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridColumn.Title">
+            <summary>
+            The string title rendered in the column header.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridColumn.Editable">
+            <summary>
+            Whether the field can be edited by the user. If set to false,
+            an editor will not be rendered for this column when the user edits an existing record.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridColumn.Filterable">
+            <summary>
+            Whether the user can filter this column. When set to false, the filter cell will remain empty.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridColumn.Groupable">
+            <summary>
+            Specifies if the grid can be grouped by this column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridColumn.Template">
+            <summary>
+            The template for the cells of this column. Used when the row is in read mode.
+            You can render custom components and apply logic in it.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridColumn.EditorTemplate">
+            <summary>
+            The template rendered in the cell when the user is editing the row.
+            You can render custom components and apply logic in it.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandColumn.Title">
+            <summary>
+            The string title rendered in the column header.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandColumn.Width">
+            <summary>
+            The width of the column.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandColumn.Commands">
+            <summary>
+            For internal use.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.GridCommandColumn.ChildContent">
+            <summary>
+            The text rendered in the button.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TreeViewBinding.Level">
+            <summary>
+            Defines the Hierarchy Level of the DataSource that should apply bindings to.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.TreeViewBinding.ExpandedField">
+            <summary>
+            Defines the Expanded DataField of the DataSource
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.WindowAction.Name">
+            <summary>
+            Defines the name of the Action. Predefined Action Names are: Close, Minimize, Maximize
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.WindowAction.IconClass">
+            <summary>
+            The CSS class rendered for the icon. You can use this to set custom font icons.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.WindowAction.Icon">
+            <summary>
+            The predefined Telerik icon that will be used. See the IconName class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.WindowAction.OnClick">
+            <summary>
+            Defines a click handler of the Action
+            </summary>
+        </member>
+        <member name="P:Telerik.Blazor.Components.WindowAction.Hidden">
+            <summary>
+            Defines whether the action should be hidden
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.IconName">
+            <summary>
+            A static class whose members denote predefined font icons for use in Telerik Components. The list matches the <a href="https://docs.telerik.com/kendo-ui/styles-and-layout/icons-web">Kendo Web Font Icons library</a>.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.AnimationType">
+            <summary>
+            Controls the animation through which animated containers are shown or hidden.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.SlideUp">
+            <summary>
+            Shows with a sliding motion from the bottom edge towards the top edge. Hides with a sliding motion towards the bottom edge.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.SlideIn">
+            <summary>
+            Sliding motion.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.SlideDown">
+            <summary>
+            Shows with a sliding motion from the top edge towards the bottom edge. Hides with a sliding motion towards the top edge.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.SlideRight">
+            <summary>
+            Shows with a sliding motion from the left edge towards the right edge. Hides with a sliding motion towards the left edge.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.SlideLeft">
+            <summary>
+            Shows with a sliding motion from the right edge towards the left edge. Hides with a sliding motion towards the right edge.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.PushUp">
+            <summary>
+            Shows with a sliding motion from the top edge towards the bottom edge. Hides with a sliding motion towards the top edge.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.PushDown">
+            <summary>
+            Shows with a sliding motion from the bottom edge towards the top edge. Hides with a sliding motion towards the bottom edge.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.PushLeft">
+            <summary>
+            Shows with a sliding motion from the left edge towards the right edge. Hides with a sliding motion towards the left edge.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.PushRight">
+            <summary>
+            Shows with a sliding motion from the right edge towards the left edge. Hides with a sliding motion towards the right edge.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.Fade">
+            <summary>
+            Shows transparent and gradually becomes opaque. Hides by becoming transparent.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.ZoomIn">
+            <summary>
+            Shows the content larger than its final dimensions and reduces its size until it fits the container. Hides by expanding the content before fading away.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.ZoomOut">
+            <summary>
+            Shows the entire element with small dimensions in the center and increases all dimensions proportionally until its actual size is reached. Hides by reducing the size to the center point.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.AnimationType.RevealVertical">
+            <summary>
+            Animates the element by the height of its content
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ButtonType">
+            <summary>
+            Controls the type attribute of the rendered button.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ButtonType.Submit">
+            <summary>
+            Renders a type="submit" attribute. Can submit the form and trigger validation. The default value.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ButtonType.Button">
+            <summary>
+            Renders a type="button" attribute. Does not invoke form validation and submission.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ButtonType.Reset">
+            <summary>
+            Renders a type="reset" attribute. Can reset the current form.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.CalendarSelectionMode">
+            <summary>
+            Controls how many dates the user can select in a calendar.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.CalendarSelectionMode.Single">
+            <summary>
+            The user can select only one date.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.CalendarSelectionMode.Multiple">
+            <summary>
+            The user can select multiple dates.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.CalendarView">
+            <summary>
+            The possible views in a Telerik Calendar component.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.CalendarView.Month">
+            <summary>
+            Shows one month.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.CalendarView.Year">
+            <summary>
+            Shows the months in a year.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.CalendarView.Decade">
+            <summary>
+            Shows the years in a decade.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.CalendarView.Century">
+            <summary>
+            Shows the decades in a century.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartAxisLabelsPosition">
+            <summary>
+            Specifies the position of the labels.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisLabelsPosition.OnAxis">
+            <summary>
+            The labels are positioned next to the axis.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisLabelsPosition.End">
+            <summary>
+            The labels are positioned at the end of the crossing axis.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisLabelsPosition.Start">
+            <summary>
+            The labels are positioned at the start of the crossing axis.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartAxisLabelsRotationAlignment">
+            <summary>
+            Specifies the rotation of the labels.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisLabelsRotationAlignment.End">
+            <summary>
+            Labels are aligned to the end.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisLabelsRotationAlignment.Center">
+            <summary>
+            Labels are aligned to the center.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartAxisTitlePosition">
+            <summary>
+            Specifies the position of the title.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisTitlePosition.Bottom">
+            <summary>
+            The title is positioned at the bottom.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisTitlePosition.Center">
+            <summary>
+            The title is positioned in the center.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisTitlePosition.Left">
+            <summary>
+            The title is positioned on the left.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisTitlePosition.Right">
+            <summary>
+            The title is positioned on the right.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartAxisTitlePosition.Top">
+            <summary>
+            The title is positioned at the top
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartCategoryAxisBaseUnit">
+            <summary>
+            Specifies the base time interval for the axis.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisBaseUnit.Seconds">
+            <summary>
+            The time interval is seconds.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisBaseUnit.Minutes">
+            <summary>
+            The time interval is minutes.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisBaseUnit.Hours">
+            <summary>
+            The time interval is hours.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisBaseUnit.Days">
+            <summary>
+            The time interval is days.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisBaseUnit.Weeks">
+            <summary>
+            The time interval is weeks.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisBaseUnit.Months">
+            <summary>
+            The time interval is months.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisBaseUnit.Years">
+            <summary>
+            The time interval is years.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisBaseUnit.Fit">
+            <summary>
+            Automatic base unit based on limit set from MaxDateGroups. Note that the BaseUnitStep setting will be disregarded.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartCategoryAxisType">
+            <summary>
+            Specifies the category axis type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisType.Category">
+            <summary>
+            Discrete category axis.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartCategoryAxisType.Date">
+            <summary>
+            Specialized axis for displaying chronological data.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartLegendAlign">
+            <summary>
+            Specifies the legend align.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendAlign.Center">
+            <summary>
+            The legend is aligned to the center.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendAlign.End">
+            <summary>
+            The legend is aligned to the end.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendAlign.Start">
+            <summary>
+            The legend is aligned to the start.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartLegendOrientation">
+            <summary>
+            Specifies the legend orientation.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendOrientation.Horizontal">
+            <summary>
+            The orientation is horizontal.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendOrientation.Vertical">
+            <summary>
+            The orientation is vertical.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartLegendPosition">
+            <summary>
+            Specifies the legend position.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendPosition.Top">
+            <summary>
+            The legend is positioned on the top
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendPosition.Bottom">
+            <summary>
+            The legend is positioned on the bottom
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendPosition.Left">
+            <summary>
+            The legend is positioned on the left
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendPosition.Right">
+            <summary>
+            The legend is positioned on the right
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartLegendPosition.Custom">
+            <summary>
+            The legend is positioned using OffsetX and OffsetY
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesAggregate">
+            <summary>
+            Specifies the preferred series aggregate.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesAggregate.Avg">
+            <summary>
+            The average of all values for the date period.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesAggregate.Count">
+            <summary>
+            The number of values for the date period.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesAggregate.First">
+            <summary>
+            The first of all values for the date period.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesAggregate.Max">
+            <summary>
+            The highest value for the date period.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesAggregate.Min">
+            <summary>
+            The lowest value for the date period.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesAggregate.Sum">
+            <summary>
+            The sum of all values for the date period.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesAggregate.SumOrNull">
+            <summary>
+            The sum of all values for the date period. If there are not data for the current period of time the aggregate will return 'null'(instead of 'zero' for the sum aggregate).
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesLabelsAlign">
+            <summary>
+            Specifies the alignment of the labels.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsAlign.Center">
+            <summary>
+            the label is positioned at the center of the segment.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsAlign.Circle">
+            <summary>
+            The label is positioned in a circle around the chart.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsAlign.Column">
+            <summary>
+            the label is positioned in a column around the chart.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsAlign.Left">
+            <summary>
+            The label is positioned to the left of the segment.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsAlign.Right">
+            <summary>
+            The label is positioned to the right of the segment.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesLabelsPosition">
+            <summary>
+            Specifies the position of the labels.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.Above">
+            <summary>
+            The label is positioned at the top of the marker.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.Below">
+            <summary>
+            the label is positioned at the bottom of the marker.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.Bottom">
+            <summary>
+            The label is positioned at the bottom of the segment.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.Center">
+            <summary>
+            the label is positioned at the center.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.InsideBase">
+            <summary>
+            The label is positioned inside, near the base of the bar.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.InsideEnd">
+            <summary>
+            The label is positioned inside, near the end of the point.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.Left">
+            <summary>
+            The label is positioned to the left of the marker.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.OutsideEnd">
+            <summary>
+            The label is positioned outside, near the end of the point
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.Right">
+            <summary>
+            The label is positioned to the right of the marker.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLabelsPosition.Top">
+            <summary>
+            The label is positioned at the top of the segment.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesLineStyle">
+            <summary>
+            Specifies the preferred line rendering style.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLineStyle.Normal">
+            <summary>
+            Points will be connected with straight line.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLineStyle.Smooth">
+            <summary>
+            Points will be connected with smooth line.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesLineStyle.Step">
+            <summary>
+            Points will be connected with a line at right angles.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesMarkersType">
+            <summary>
+            Specifies the shape of the marker.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesMarkersType.Circle">
+            <summary>
+            The marker shape is circle.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesMarkersType.Cross">
+            <summary>
+            The marker shape is cross.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesMarkersType.Square">
+            <summary>
+            The marker shape is square.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesMarkersType.Triangle">
+            <summary>
+            The marker shape is triangle.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesMissingValues">
+            <summary>
+            Specifies the behavior for handling missing values in the series.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesMissingValues.Gap">
+            <summary>
+            The line stops before the missing point and continues after it.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesMissingValues.Interpolate">
+            <summary>
+            The value is interpolated from neighboring points.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesMissingValues.Zero">
+            <summary>
+            The value is assumed to be zero.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesStackType">
+            <summary>
+            Specifies the preferred stack type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesStackType.Normal">
+            <summary>
+            The value of the stack is the sum of all points in the category (or group).
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesStackType.Stack100">
+            <summary>
+            The value of the stack is always 100% (1.0). Points within the category (or group) are represented as percentages.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesStyle">
+            <summary>
+            Specifies the preferred rendering style.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesStyle.Normal">
+            <summary>
+            Points will be connected with a straight line.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesStyle.Smooth">
+            <summary>
+            Points will be connected with a smooth line.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesStyle.Step">
+            <summary>
+            Points will be connected with a line at right angles.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartSeriesType">
+            <summary>
+            The type of the series.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesType.Area">
+            <summary>
+            Specifies Area series.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesType.Bar">
+            <summary>
+            Specifies Bar series.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesType.Column">
+            <summary>
+            Specifies Column series.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesType.Donut">
+            <summary>
+            Specifies Donut series.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesType.Line">
+            <summary>
+            Specifies Line series.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartSeriesType.Pie">
+            <summary>
+            Specifies Pie series.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartTitleAlign">
+            <summary>
+            Specifies the title alignment.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartTitleAlign.Left">
+            <summary>
+            The text is aligned to the left.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartTitleAlign.Center">
+            <summary>
+            The text is aligned to the middle
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartTitleAlign.Right">
+            <summary>
+            The text is aligned to the right.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartTitlePosition">
+            <summary>
+            Specifies the title position.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartTitlePosition.Top">
+            <summary>
+            The title is positioned at the top
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartTitlePosition.Bottom">
+            <summary>
+            The title is positioned at the bottom
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.ChartValueAxisType">
+            <summary>
+            Specifies the category axis type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartValueAxisType.Numeric">
+            <summary>
+            Numeric axis type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.ChartValueAxisType.Logarithmic">
+            <summary>
+            Logarithmic axis type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.DashType">
+            <summary>
+            Specifies the line dash type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.DashType.Solid">
+            <summary>
+            A solid line.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.DashType.Dot">
+            <summary>
+            A line consisting of dots.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.DashType.Dash">
+            <summary>
+            A line consisting of dashes.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.DashType.LongDash">
+            <summary>
+            A line consisting of a repeating pattern of long dashes.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.DashType.DashDot">
+            <summary>
+            A line consisting of a repeating pattern of dashes and dots.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.DashType.LongDashDot">
+            <summary>
+            A line consisting of a repeating pattern of long dashes and dots.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.DashType.LongDashDotDot">
+            <summary>
+            A line consisting of a repeating pattern of long dashes and two dots.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.RenderingMode">
+            <summary>
+            The type of the series.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.RenderingMode.SVG">
+            <summary>
+            Attempts to render the widget as an inline SVG document.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.RenderingMode.Canvas">
+            <summary>
+            Attempts to render the widget as Canvas element.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.GridEditMode">
+            <summary>
+            The edit mode of the Grid.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridEditMode.Inline">
+            <summary>
+            Edit the entire row
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridEditMode.Popup">
+            <summary>
+            Edit in an external popup editor
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridEditMode.Incell">
+            <summary>
+            Edit individual cells separately
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.GridFilterMode">
+            <summary>
+            The filtering mode of the Grid.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridFilterMode.None">
+            <summary>
+            No Filter
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridFilterMode.FilterRow">
+            <summary>
+            Shows filter row
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridFilterMode.FilterMenu">
+            <summary>
+            Shows filter menu
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.GridSelectionMode">
+            <summary>
+            The selection mode of the Grid.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridSelectionMode.None">
+            <summary>
+            No Selection
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridSelectionMode.Single">
+            <summary>
+            Allows only a single row to be selected at any time
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.GridSelectionMode.Multiple">
+            <summary>
+            Allows multiple rows to be selected simultaneously.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.MenuOrientation">
+            <summary>
+            Controls whether the menu to be displayed horizontally or vertically
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.MenuOrientation.Horizontal">
+            <summary>
+            Displays the Menu horizontally
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.MenuOrientation.Vertical">
+            <summary>
+            Displays the Menu horizontally
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.Sort">
+            <summary>
+            Sort order.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.Sort.None">
+            <summary>
+            Natural sorting - as the items occur in the data source.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.Sort.Ascending">
+            <summary>
+            Ascending (increasing, from small to large) order according to the rules for the current field type.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.Sort.Descending">
+            <summary>
+            Descending (decreasing, from large to small) order according to the rules for the current field type.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.TabPosition">
+            <summary>
+            The possible positions of the tab list in a Tab Strip in relation to the content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.TabPosition.Top">
+            <summary>
+            The list of tabs is above the content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.TabPosition.Bottom">
+            <summary>
+            The list of tabs is below the content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.TabPosition.Left">
+            <summary>
+            The list of tabs is to the left of the content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.TabPosition.Right">
+            <summary>
+            The list of tabs is to the right of the content.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.WindowSize">
+            <summary>
+            Predefined size for a Telerik component (e.g., Window).
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.WindowSize.Small">
+            <summary>
+            300px width.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.WindowSize.Medium">
+            <summary>
+            800px width.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.WindowSize.Large">
+            <summary>
+            1200px width.
+            </summary>
+        </member>
+        <member name="T:Telerik.Blazor.WindowState">
+            <summary>
+            The state of the Window (minimized, maximized or standard size/position).
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.WindowState.Default">
+            <summary>
+            The parameters for size (dimensions) and position (centering) are used.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.WindowState.Minimized">
+            <summary>
+            The window is just the titlebar and does not render its content.
+            </summary>
+        </member>
+        <member name="F:Telerik.Blazor.WindowState.Maximized">
+            <summary>
+            The window takes up the viewport.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions">
+            <summary>
+            Class that contains the Telerik service extensions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddTelerikBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the Telerik Blazor services. You must call it in the ConfigureServices method of the Startup class of your project.
+            </summary>
+            <param name="services">The IServiceCollection argument the ConfigureServices method receives.</param>
+            <returns>The updated IServiceCollection collection argument the ConfigureServices method receives.</returns>
+        </member>
+    </members>
+</doc>
